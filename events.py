@@ -31,3 +31,13 @@ def townPath(arg):
         print('Now that you look around, all the townspeople seem to look like beloved radio personality Tom Bodett')
         print('That\'s weird')
         print('Anyway, after grabbing a few drinks, you overhear of a bounty for the creatures that reside in the swamp outside of Rockport')
+    
+    elif arg == 'look for work':
+        print('\nAfter spending a couple hours asking every Tom Bodett about work, you find a job')
+        print('One of them tasks you with checking out his house, making sure his cousin, Ron Bodett, isn\'t stealing from him')
+        print('He tells you that his address is at 420 Daverly Place')
+
+    elif arg == 'visit hotel':
+        print('\nYou trudge to the Rockport hotel, exhausted from the long journey to town')
+        print('The lobby of the hotel is a luxurious, sprawling floor filled with velvet furniture and golden decorations')
+        print('You speak to the hotel staff and acquire a room on the 7th floor of the hotel')

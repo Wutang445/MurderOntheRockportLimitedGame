@@ -18,4 +18,7 @@ wagonInteraction(response)
 
 print("All the occupants of the wagon stumble out through back, you follow")
 print("You've made it into the town, what do you choose to do next?\n")
-print("head to bar || look for work || visit inn")
+print("head to bar || look for work || visit hotel")
+decision = input()
+
+townPath(decision)
