@@ -1,5 +1,4 @@
-from introduction import introFunction
-from wagon import *
+from events import *
 
 # Game Text
 
@@ -16,3 +15,7 @@ print("observe || speak || stay silent\n")
 response = input()
 
 wagonInteraction(response)
+
+print("All the occupants of the wagon stumble out through back, you follow")
+print("You've made it into the town, what do you choose to do next?\n")
+print("head to bar || look for work || visit inn")

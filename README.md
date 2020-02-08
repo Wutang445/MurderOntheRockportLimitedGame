@@ -1,4 +1,4 @@
-# Murder on the Rockport Limited
+# Murder at Rockport
 
 # A text-based choose your own adventure inspired by the Adventure Zone podcast
 
