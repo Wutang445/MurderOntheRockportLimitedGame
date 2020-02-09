@@ -1,5 +1,7 @@
-# Dice d20 mechanic
 import random
+
+
+# Dice d20 mechanic
 
 
 def rollD20():
@@ -9,8 +11,30 @@ def rollD20():
 
 
 def swampBattle():
-    print('After a short ride out with your horse, you finally reach the outskirts of town, in view of the swamp\n',
-          'Something definitely feels amiss though. You feel like you\'re being watched.')
+    print('After a short ride out with your horse, you finally reach the outskirts of town, in view of the swamp',
+          '\nSomething definitely feels amiss though. You feel like you\'re being watched. Do you want to make a perception check? (yes/no)')
+    answer = input()
+
+    if(answer == 'yes'):
+        check = rollD20()
+        print('You rolled a ' + str(check) + ' for perception')
+        if(check > 8):
+            print('Congrats, you passed the check!\n'
+                  'You see a mass of twisted trees around without leaves, but also notice in the distance what looks to be',
+                  'to be crashed pod. As you get closer\nto the site, you see a fallen branch atop a crushed, giant leech, along',
+                  'with other, clearly dead giant leeches. Footprints seem to be scattered\nall around, but they head in the direction of the town.')
+
+            print(
+                '\nYou also hear what seems like the snap of small twigs, and the sound of a faint, low hum.\n'
+                'As you creep up to the source of the sounds, you see 2 figures in the distance.\n'
+                'The first figure is a human male wearing plated armor, strapped high to one of the trees in a crucifixion pose. His mouth is gagged with a black cloth\n'
+                'The second figure you recognize. It\'s the 7 ft tall hooded occupant of the wagon you rode into town. His hand is raised and colored red,\nthe low hum is emanating from',
+                'the spell he seems to be casting.')
+
+        else:
+            print('You didn\'t pass the check, better luck next time...\n'
+                  'You shudder as the landscape around you gives off the worst vibes')
+
 
 # Storyline functions
 
