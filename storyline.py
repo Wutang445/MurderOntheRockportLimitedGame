@@ -2,10 +2,11 @@ from events import *
 
 # Game Text
 
-print("********************************************");
-print("***** Welcome to the Rockport Limited! *****");
+print('*' * 44)
+print('*' * 13 + 'Murder at Rockport' + '*' * 13)
 print("***Are you ready to begin your adventure?***")
-print("********************************************");
+print('*' * 44)
+print('*' * 13 + 'yes' + '*' * 13 + 'no' + '*' * 13)
 
 introFunction(input())
 
