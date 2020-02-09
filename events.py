@@ -28,12 +28,21 @@ def swampBattle():
                 '\nYou also hear what seems like the snap of small twigs, and the sound of a faint, low hum.\n'
                 'As you creep up to the source of the sounds, you see 2 figures in the distance.\n'
                 'The first figure is a human male wearing plated armor, strapped high to one of the trees in a crucifixion pose. His mouth is gagged with a black cloth\n'
-                'The second figure you recognize. It\'s the 7 ft tall hooded occupant of the wagon you rode into town. His hand is raised and colored red,\nthe low hum is emanating from',
-                'the spell he seems to be casting.')
+                'The second figure you recognize. It\'s the 7 ft tall hooded occupant of the wagon you rode into town. His hand is raised and colored red,\n',
+                'the low hum is emanating from the spell he seems to be casting. Suddenly the human looks up, awake, with glowing, red eyes, and is enveloped by\n'
+                'what seems to be his own blood, flooding out from him and consuming his entire body. You hear a loud shriek from him, and the hooded figure clutches\n'
+                'his main hand and a loud *SPLORTCH* as the human is reduced to a small crimson ball, which then explodes outwards as it knocks the hooded figure back.\n'
+                'You hide quickly behind a tree to avoid the effects of what you witnessed, but peer out afterwards to see the remains of the human\'s armor scattered all around\n'
+                'along with the hooded figure laying on the swamp floor, unconscious.')
 
         else:
-            print('You didn\'t pass the check, better luck next time...\n'
-                  'You shudder as the landscape around you gives off the worst vibes')
+            print('Didn\'t pass the check, better luck next time...\n')
+
+    else:
+        print('You shudder as the landscape around you gives off the worst vibes. After walking for a few minutes, you hear a *SPLORTCH*, and then a shriek\n'
+              'Quickly, you dart behind a larger tree and hunker down, petrified with fear. You wait for about 15-20 minutes before you determine the coast\n'
+              'is clear. You carefully walk out from your hiding place and head in the direction of where the sounds came from, and find a tall figure\n'
+              'slumped over on the swamp floor, along with scattered pieces of what looks like bloodstained armor plating laying everywhere.')
 
 
 # Storyline functions
