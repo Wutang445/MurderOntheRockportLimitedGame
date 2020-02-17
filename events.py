@@ -43,6 +43,9 @@ def swampBattle():
               'Quickly, you dart behind a larger tree and hunker down, petrified with fear. You wait for about 15-20 minutes before you determine the coast\n'
               'is clear. You carefully walk out from your hiding place and head in the direction of where the sounds came from, and find a tall figure\n'
               'slumped over on the swamp floor, along with scattered pieces of what looks like bloodstained armor plating laying everywhere.')
+    
+    print('As you recover from the incident, a cluster of long, wiry eye stalks seems to dart out of the tree where the armor pieces lay scattered. You warily walk closer to the tree, only to find that two gigantic leeches\n'
+    'rear their heads out, and suddenly you\'re surrounded on two sides by these horrendous, slithering creatures. Get ready for battle!')
 
 
 # Storyline functions
