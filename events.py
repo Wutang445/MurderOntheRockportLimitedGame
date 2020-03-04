@@ -7,6 +7,21 @@ import random
 def rollD20():
     return random.randint(1, 20)
 
+# Battle Mechanics
+
+def battle(enemyList):
+    print('Roll for initiative!')
+    battleOrder = {}
+    userRoll = rollD20();
+    
+    for enemies in enemyList:
+        battleOrder[f'{enemies}'] = rollD20()
+    battleOrder['user'] = userRoll
+
+    for k,v in battleOrder:
+        
+    
+
 # Branching Paths
 
 
@@ -45,7 +60,9 @@ def swampBattle():
               'slumped over on the swamp floor, along with scattered pieces of what looks like bloodstained armor plating laying everywhere.')
     
     print('As you recover from the incident, a cluster of long, wiry eye stalks seems to dart out of the tree where the armor pieces lay scattered. You warily walk closer to the tree, only to find that two gigantic leeches\n'
-    'rear their heads out, and suddenly you\'re surrounded on two sides by these horrendous, slithering creatures. Get ready for battle!')
+    'rear their heads out, and suddenly you\'re surrounded on two sides by these horrendous, slithering creatures. Get ready for battle!\n')
+
+    battle(['leech1', 'leech2'])
 
 
 # Storyline functions
