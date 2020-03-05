@@ -9,21 +9,24 @@ def rollD20():
 
 # Battle Mechanics
 
+
 def battle(enemyList):
     print('Roll for initiative!')
     battleOrder = {}
-    userRoll = rollD20();
-    
+    userRoll = rollD20()
+
     for enemies in enemyList:
         battleOrder[f'{enemies}'] = rollD20()
     battleOrder['user'] = userRoll
-    battleOrder = sorted(battleOrder, key=battleOrder.__getitem__)
-    
+    battleOrder = sorted(
+        battleOrder, key=battleOrder.__getitem__, reverse=True)
+
     print('The battle order is:\n')
-    for i in battleOrder:
-        print(i)
-        
-    
+    for i in range(len(battleOrder)):
+        print(battleOrder[i])
+        battleOrder[i] = {battleOrder[i]: {'health': 20}}
+    print(battleOrder)
+
 
 # Branching Paths
 
@@ -61,9 +64,9 @@ def swampBattle():
               'Quickly, you dart behind a larger tree and hunker down, petrified with fear. You wait for about 15-20 minutes before you determine the coast\n'
               'is clear. You carefully walk out from your hiding place and head in the direction of where the sounds came from, and find a tall figure\n'
               'slumped over on the swamp floor, along with scattered pieces of what looks like bloodstained armor plating laying everywhere.')
-    
+
     print('As you recover from the incident, a cluster of long, wiry eye stalks seems to dart out of the tree where the armor pieces lay scattered. You warily walk closer to the tree, only to find that two gigantic leeches\n'
-    'rear their heads out, and suddenly you\'re surrounded on two sides by these horrendous, slithering creatures. Get ready for battle!\n')
+          'rear their heads out, and suddenly you\'re surrounded on two sides by these horrendous, slithering creatures. Get ready for battle!\n')
 
     battle(['leech1', 'leech2'])
 
