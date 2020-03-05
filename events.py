@@ -17,8 +17,11 @@ def battle(enemyList):
     for enemies in enemyList:
         battleOrder[f'{enemies}'] = rollD20()
     battleOrder['user'] = userRoll
-
-    for k,v in battleOrder:
+    battleOrder = sorted(battleOrder, key=battleOrder.__getitem__)
+    
+    print('The battle order is:\n')
+    for i in battleOrder:
+        print(i)
         
     
 
