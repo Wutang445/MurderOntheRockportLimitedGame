@@ -27,12 +27,29 @@ def battle(enemyList):
         print(battleOrder[i])
         order.append(battleOrder[i])
         battleOrder[i] = {battleOrder[i]: 20}
-    for j in range(len(order)):
-        print(order[j] + ' gets to attack first!')
+    print(order[0] + ' gets to attack first!')
+    if(order[0] == 'user'):
+        print('Roll for attack!')
+        userAttack = input()
+        while userAttack != 'roll':
+            print('Sorry! Roll again!')
+            userAttack = input()
+    else:
+        print(order[0] + ' attacks you for ' + str(random.randint(1, 5)) + '!')
+    for j in range(1, len(order)):
+        print(order[j] + ' is next!')
         if(order[j] == 'user'):
-            print('Roll for attack!')
-
-
+            print('Roll for attack!',
+                  '\n Roll')
+            userAttack = input()
+            while type(userAttack) != type(1):
+                print('Sorry! Roll again!')
+                if(input() == 'roll'):
+                    userAttack = rollD20()
+            print('Good roll!')
+            print('You attack for ' + str(userAttack) + '!')
+        else:
+            print(order[j] + ' attacks for ' + str(random.randint(1, 5)) + '!')
 # Branching Paths
 
 
