@@ -13,6 +13,7 @@ def rollD20():
 def battle(enemyList):
     print('Roll for initiative!')
     battleOrder = {}
+    order = []
     userRoll = rollD20()
 
     for enemies in enemyList:
@@ -24,8 +25,12 @@ def battle(enemyList):
     print('The battle order is:\n')
     for i in range(len(battleOrder)):
         print(battleOrder[i])
-        battleOrder[i] = {battleOrder[i]: {'health': 20}}
-    print(battleOrder)
+        order.append(battleOrder[i])
+        battleOrder[i] = {battleOrder[i]: 20}
+    for j in range(len(order)):
+        print(order[j] + ' gets to attack first!')
+        if(order[j] == 'user'):
+            print('Roll for attack!')
 
 
 # Branching Paths
