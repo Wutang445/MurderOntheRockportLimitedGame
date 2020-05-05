@@ -28,6 +28,10 @@ def battle(enemyList):
         order.append(battleOrder[i])
         battleOrder[i] = {battleOrder[i]: 20}
     print(order[0] + ' gets to attack first!')
+    print(battleOrder)
+    print('Health Status:')
+    for i in battleOrder:
+        print(i)
     if(order[0] == 'user'):
         print('Roll for attack!')
         userAttack = input()
@@ -50,6 +54,7 @@ def battle(enemyList):
             print('You attack for ' + str(userAttack) + '!')
         else:
             print(order[j] + ' attacks for ' + str(random.randint(1, 5)) + '!')
+
 # Branching Paths
 
 
